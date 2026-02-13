@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Translator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-shell">
+        <div class="container">
+            <header>
+                <h1>AI Translator</h1>
+                <p>Translate text instantly with precision.</p>
+            </header>
+
+            <div class="controls">
+                <select id="source-lang">
+                    <option value="en-GB">English</option>
+                    <option value="es-ES">Spanish</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="it-IT">Italian</option>
+                </select>
+                
+                <div class="swap-icon" id="swap-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+
+                <select id="to-lang">
+                    <option value="es-ES">Spanish</option>
+                    <option value="en-GB">English</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="hi-IN">Hindi</option>
+                </select>
+            </div>
+
+            <div class="wrapper">
+                <div class="input-area">
+                    <textarea id="from-text" placeholder="Enter text..."></textarea>
+                </div>
+                <div class="input-area">
+                    <textarea id="to-text" placeholder="Translation..." readonly></textarea>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="translate-btn" class="primary-btn">
+                    <i class="fas fa-magic"></i> Translate Text
+                </button>
+                <button id="copy-btn" class="secondary-btn">
+                    <i class="far fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
